@@ -26,11 +26,16 @@ export const metadata: Metadata = {
     "Iași",
     "Brașov",
   ],
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
   openGraph: {
     title: "Chess Ascend League | Construim ecosistemul de șah din România",
     description:
       "Alătură-te mișcării care transformă șahul în România. Comunitate, evenimente, parteneriate.",
     type: "website",
+    images: ["/logo.jpg"],
   },
 };
 

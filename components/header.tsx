@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,14 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/logo.jpg"
+              alt="Chess Ascend League"
+              width={48}
+              height={48}
+              className="h-10 w-10 rounded-lg object-cover lg:h-12 lg:w-12"
+            />
             <span className="font-serif text-xl font-semibold tracking-tight lg:text-2xl">
               Chess Ascend
             </span>
